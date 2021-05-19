@@ -1,17 +1,17 @@
-There are two supported ways you can use Named Hosting with CloudFlare:
+### Step 1: Creating records
+Create the following records
+| Type | Name | Target | Proxy
+| - | - | - | -
+| `CNAME` | `@` (yourdomain.com) | `site.namedhosting.com` | Disabled
+| `CNAME` | `www` | `site.namedhosting.com` | Disabled 
 
-### Proxy disabled (strongly recommended)
-See [this](https://www.unixsheikh.com/articles/stay-away-from-cloudflare.html) for more info. Summarized, with proxy enabled:
-* CloudFlare owns the private keys to your SSL certificate, which means they will be able to inspect and modify your website traffic (see passwords, change text on your site)*
-* CloudFlare may annoy some visitors with captchas or block them completely.
-* CloudFlare is able to analyze requests and properties of the visitor's device, giving them a large amount of useful data.*
+Disabling cloudflare proxy is very important, even if you want to use it later!
 
-Disable proxy in cloudflare and enable HTTPS in your Named Hosting dashboard.
+### Step 2: Wait for your site to work
+Usually it takes only 5 minutes. Note that you have to use `http://`, not `https://`. As soon as you see the NamelessMC installer at your domain, continue to the next step (do not go through the installer yet)
 
-### Proxy enabled
-Enable proxy in CloudFlare (set to flexible SSL) and disable HTTPS in your Named Hosting Dashboard.
+### Step 3: Enable HTTPS
+Go to your site on the Named Hosting dashboard, click 'Edit', then enable HTTPS. Wait about a minute, then refresh your site. It should now redirect to `https://` automatically. If not, wait 30 minutes and try again. If it still doesn't work, contact support.
 
-
-
-<br><br><br><br><br><br>
-\* CloudFlare is not known to abuse this power at the moment, but history shows over and over again that most businesses eventually will.
+### Step 4: Enable proxy (optional)
+Leaving proxy disabled will likely result in better security. With proxy enabled, performance may get better or may get worse. It is useful if you suspect denial of service attacks on your site, but otherwise we recommend leaving it disabled.
