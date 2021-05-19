@@ -8,7 +8,9 @@ Create the following records
 Disabling cloudflare proxy is very important, even if you want to use it later!
 
 ### Step 2: Wait for your site to work
-Usually it takes only 5 minutes. Note that you have to use `http://`, not `https://`. As soon as you see the NamelessMC installer at your domain, continue to the next step (do not go through the installer yet)
+Usually it takes only 5 minutes. Note that you have to use `http://`, not `https://`. As soon as you see the NamelessMC installer at your domain, continue to the next step (do not go through the installer yet).
+
+If you are impatient you can try clearing your browser cache and operating system DNS cache.
 
 ### Step 3: Enable HTTPS
 Go to your site on the Named Hosting dashboard, click 'Edit', then enable HTTPS. Wait about a minute, then refresh your site. It should now redirect to `https://` automatically. If not, wait 30 minutes and try again. If it still doesn't work, contact support.
