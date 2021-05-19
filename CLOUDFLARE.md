@@ -17,3 +17,5 @@ Go to your site on the Named Hosting dashboard, click 'Edit', then enable HTTPS.
 
 ### Step 4: Enable proxy (optional)
 Leaving proxy disabled will likely result in better security. With proxy enabled, performance may get better or may get worse. It is useful if you suspect denial of service attacks on your site, but otherwise we recommend leaving it disabled.
+
+If you do enable proxy, make sure to set security level to "Full" or your site will break.
