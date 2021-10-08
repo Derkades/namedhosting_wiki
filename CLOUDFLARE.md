@@ -25,3 +25,6 @@ In CloudFlare, go to the `Rules` page and click `Create Page Rule`. Enter the fo
 ![image](https://user-images.githubusercontent.com/15892014/125193258-d04c0680-e24b-11eb-9bd4-46709b71b4f4.png)
 
 In place of `yourdomain.com` use your actual primary domain. Note that you may need to add `www.`: if `yourdomain.com` redirects to `www.yourdomain.com`, enter `www.yourdomain.com`. If `www.yourdomain.com` doesn't work or redirects to `yourdomain.com`, use `yourdomain.com`.
+
+### Additional notes
+Don't enable "Under attack mode" for a long time (multiple weeks) and don't block requests by country. This might prevent named hosting from seeing your website is working, and it'll display a warning banner. Websites that are not detected to be working will be deleted.
