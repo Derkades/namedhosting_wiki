@@ -2,7 +2,6 @@
 
 Do not enable "force https" or "force www" in NamelessMC, it will break your site. Instead, configure it in the Named Hosting dashboard.
 
-
 If you accidentally enabled it, follow the steps bellow 
 
 ### v2-pre10+
