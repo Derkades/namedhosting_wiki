@@ -2,7 +2,7 @@
 
 ## Same NamelessMC version, different PHP version
 
-This is possible by just changing the version in Named Hosting dashboard. No additional work is required. For example, you can change from `pr9` to `pr9 on PHP 8` and back without data loss.
+This is possible by just changing the version in Named Hosting dashboard. No additional work is required. For example, you can change from `pr12` to `pr12 on PHP 8` and back without data loss.
 
 ## Newer NamelessMC version
 

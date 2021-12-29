@@ -1,9 +1,10 @@
 ### Step 1: Creating records
 Create the following records
-| Type | Name | Target | Proxy
-| - | - | - | -
-| `CNAME` | `@` (yourdomain.com) | `site.namedhosting.com` | Disabled
-| `CNAME` | `www` | `site.namedhosting.com` | Disabled 
+
+| Type    | Name                 | Target                  | Proxy    |
+| ------- | -------------------- | ----------------------- | -------- |
+| `CNAME` | `@` (yourdomain.com) | `site.namedhosting.com` | Disabled |
+| `CNAME` | `www`                | `site.namedhosting.com` | Disabled |
 
 Disabling cloudflare proxy is very important, even if you want to use it later!
 
