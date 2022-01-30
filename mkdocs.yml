@@ -1,0 +1,12 @@
+site_name: NamedHosting Wiki
+repo_url: https://github.com/Derkades/namedhosting_wiki
+repo_name: NamedHosting Wiki
+markdown_extensions:
+  - tables
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  palette:
+    scheme: slate
+    primary: teal

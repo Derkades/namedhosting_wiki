@@ -1,3 +1,5 @@
+# Migrate from webhost
+
 Do NOT use the NamelessMC installer. If you did, press the 'Reset' button in Named Hosting.
 
 1. Export your MySQL database, e.g. using phpmyadmin
