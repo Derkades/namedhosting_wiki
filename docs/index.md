@@ -1,3 +1,3 @@
-# About
+# Home
 
-Hey, you are visiting a wiki for [NamedHosting](https://namedhosting.com)
+Welcome to the [Named Hosting](https://namedhosting.com) wiki! Contribute by making pull requests to [the GitHub repository](https://github.com/Derkades/namedhosting_wiki).
