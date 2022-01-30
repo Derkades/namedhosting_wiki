@@ -1,6 +1,6 @@
-site_name: NamedHosting Wiki
+site_name: Named Hosting Wiki
 repo_url: https://github.com/Derkades/namedhosting_wiki
-repo_name: NamedHosting Wiki
+repo_name: Named Hosting Wiki
 edit_uri: edit/main/docs/
 markdown_extensions:
   - tables
