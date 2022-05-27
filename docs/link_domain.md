@@ -14,8 +14,7 @@ Some DNS providers like CloudFlare, easyDNS ("ANAME"), DNSimple ("ALIAS"), DNS M
 You do not need to transfer your domain to use cloudflare, simply update your nameservers to use their DNS configuration panel.
 
 ### Use an IP address directly (easiest)
-Currently, `site.namedhosting.com` has address `194.163.146.186`. You can add an A record pointing to this IP address. However, if Named Hosting is moved to a different server or the IP address of the current server changes for some reason, you will need to update the IP address manually.
+Currently, `site.namedhosting.com` has address `159.69.6.244`. You can add an A record pointing to this IP address. However, if Named Hosting is moved to a different server or the IP address of the current server changes for some reason, you will need to update the IP address manually.
 
 ### Use www. with a redirect (last resort)
 If your DNS provider supports redirect domains, set up a redirect from `yoursite.com` to `www.yoursite.com` and add a CNAME record for `www.yoursite.com`
-
