@@ -6,6 +6,6 @@ WORKDIR /tmp/build
 COPY . .
 RUN mkdocs build
 
-FROM nginxinc/nginx-unprivileged:stable-alpine
+FROM nginxinc/nginx-unprivileged:stable
 
 COPY --from=builder /tmp/build/site /usr/share/nginx/html
