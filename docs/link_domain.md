@@ -1,6 +1,6 @@
 # Linking your domain
 
-If you use CloudFlare, just skip this page and go straight to the [CloudFlare wiki page](https://github.com/Derkades/namedhosting_wiki/blob/main/CLOUDFLARE.md).
+If you use CloudFlare, just skip this page and go straight to the [CloudFlare wiki page](./cloudflare.md).
 
 You need to somehow point your domain to `site.namedhosting.com`. If you use a subdomain (e.g. `forum.yoursite.com`) you can simply add a CNAME record.
 
