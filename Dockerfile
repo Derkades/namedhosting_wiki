@@ -1,6 +1,6 @@
-FROM python:3-slim AS builder
+FROM python:3.12-slim AS builder
 
-RUN pip install mkdocs-material
+RUN pip install --no-cache-dir mkdocs-material
 
 WORKDIR /tmp/build
 COPY . .

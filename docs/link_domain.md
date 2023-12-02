@@ -1,20 +1,34 @@
 # Linking your domain
 
-If you use CloudFlare, just skip this page and go straight to the [CloudFlare wiki page](./cloudflare.md).
+If you use CloudFlare, skip this page and go straight to the [CloudFlare wiki page](./cloudflare.md).
 
-You need to somehow point your domain to `site.namedhosting.com`. If you use a subdomain (e.g. `forum.yoursite.com`) you can simply add a CNAME record.
+You need to point your domain to `site.namedhosting.com`. You must also link the `www.` subdomain, even if you don't want to use it.
 
-If you don't use a subdomain (`yoursite.com` or `www.yoursite.com`) it is more complicated. Please read the instructions below.
+## Root domain (with CNAME)
 
-According to the DNS spec [it's not possible to add a CNAME record to your root domain](https://www.freecodecamp.org/news/why-cant-a-domain-s-root-be-a-cname-8cbab38e5f5c/).
-
-### Use a DNS provider that supports CNAME flattening (most reliable)
 Some DNS providers like CloudFlare, easyDNS ("ANAME"), DNSimple ("ALIAS"), DNS Made Easy ("ANAME") allow setting a CNAME record for a root domain. Technically it'll be an A record which they update periodically with a new IP address.
 
-You do not need to transfer your domain to use cloudflare, simply update your nameservers to use their DNS configuration panel.
+| Type    | Name                 | Target
+| ------- | -------------------- | -----------------------
+| `CNAME` | `@` (yourdomain.com) | `site.namedhosting.com`
+| `CNAME` | `www`                | `site.namedhosting.com`
 
-### Use an IP address directly (easiest)
-Currently, `site.namedhosting.com` has address `159.69.6.244`. You can add an A record pointing to this IP address. However, if Named Hosting is moved to a different server or the IP address of the current server changes for some reason, you will need to update the IP address manually.
+## Root domain (without CNAME)
 
-### Use www. with a redirect (last resort)
-If your DNS provider supports redirect domains, set up a redirect from `yoursite.com` to `www.yoursite.com` and add a CNAME record for `www.yoursite.com`
+If your DNS provider does not support CNAME flattening, you have to use an A record on the root domain. This means you will manually need to update the IP address if it ever changes in the future (rarely).
+
+| Type    | Name                 | Target
+| ------- | -------------------- | -----------------------
+| `A`     | `@` (yourdomain.com) | `159.69.6.244`
+| `CNAME` | `www`                | `site.namedhosting.com`
+
+## Subdomain
+
+| Type    | Name                 | Target
+| ------- | -------------------- | -----------------------
+| `CNAME` | `forum`              | `site.namedhosting.com`
+| `CNAME` | `www.forum`          | `site.namedhosting.com`
+
+## With SRV record for Minecraft
+
+See the [SRV record wiki page](./srv.md).
